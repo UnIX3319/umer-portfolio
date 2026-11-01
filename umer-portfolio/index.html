@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Umer Shoaib — Web Developer &amp; WordPress Developer</title>
+  <meta name="description" content="Umer Shoaib is a Web Developer and WordPress Developer from Karachi, building responsive, modern websites with HTML, CSS, Bootstrap, WordPress, PHP and Laravel.">
+  <meta name="author" content="Umer Shoaib">
+  <meta name="theme-color" content="#080D18">
+  <meta name="color-scheme" content="dark light">
+
+  <!-- Open Graph. Add an absolute og:image URL once the site is deployed. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Umer Shoaib — Web Developer &amp; WordPress Developer">
+  <meta property="og:description" content="Responsive, modern and user-friendly websites with frontend technologies, WordPress and PHP.">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%234C8DFF'/%3E%3Cstop offset='1' stop-color='%232DD4BF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23080D18'/%3E%3Crect x='2' y='2' width='60' height='60' rx='14' fill='none' stroke='url(%23g)' stroke-width='3'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' text-anchor='middle' fill='url(%23g)'%3EUS%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Sora:wght@500;600;700;800&display=swap">
+
+  <script>
+    /* Apply saved theme before first paint to avoid a flash. */
+    (function () {
+      try {
+        var t = localStorage.getItem('us-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- SVG icon sprite -->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 11l5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-layout" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M9 9v11"/></g></symbol>
+  <symbol id="i-blocks" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><path d="M17 13v8M13 17h8" stroke-linecap="round"/></g></symbol>
+  <symbol id="i-server" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></g></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0 5 5L21 12.6 12.6 21a2.1 2.1 0 0 1-3-3L18 9.6z" transform="translate(-3 -3) scale(1.1)" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6a2 2 0 0 1 2-2h8" stroke-linecap="round"/></g></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3 10 14M21 3l-7 18-4-7-7-4 18-7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="top">
+  <div class="nav__inner container">
+    <a href="#home" class="brand" aria-label="Umer Shoaib — home">
+      <span class="brand__mark" aria-hidden="true">US</span>
+      <span class="brand__name">Umer Shoaib</span>
+    </a>
+
+    <nav class="nav__links" id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#home" data-nav>Home</a></li>
+        <li><a href="#about" data-nav>About</a></li>
+        <li><a href="#skills" data-nav>Skills</a></li>
+        <li><a href="#projects" data-nav>Projects</a></li>
+        <li><a href="#journey" data-nav>Journey</a></li>
+        <li><a href="#contact" data-nav>Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="icon-btn theme-toggle" type="button" id="theme-toggle" aria-label="Switch to light mode">
+        <svg class="theme-toggle__moon" width="20" height="20" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="theme-toggle__sun" width="20" height="20" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+      <button class="icon-btn nav__burger" type="button" id="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="burger" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home" aria-labelledby="hero-title">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__grid"></div>
+      <div class="hero__orb hero__orb--a"></div>
+      <div class="hero__orb hero__orb--b"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <p class="status reveal" style="--d:0ms">
+          <span class="status__dot" aria-hidden="true"></span>
+          Open to learning &amp; freelance projects
+        </p>
+
+        <h1 id="hero-title" class="hero__title reveal" style="--d:80ms">
+          Hi, I'm <span class="grad">Umer Shoaib.</span>
+        </h1>
+
+        <p class="hero__role reveal" style="--d:140ms">
+          <span class="mono">&gt;</span>
+          <span class="rotator" aria-live="off">
+            <span class="rotator__text" id="rotator">responsive websites</span><span class="rotator__caret" aria-hidden="true"></span>
+          </span>
+        </p>
+
+        <p class="hero__lead reveal" style="--d:200ms">
+          Web Developer crafting responsive, modern and user-friendly digital experiences.
+        </p>
+        <p class="hero__sub reveal" style="--d:260ms">
+          I build websites using modern frontend technologies, WordPress and PHP. I am also exploring Agentic AI and intelligent automation.
+        </p>
+
+        <div class="hero__cta reveal" style="--d:320ms">
+          <a class="btn btn--primary" href="#projects">
+            View My Projects
+            <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#contact">Contact Me</a>
+          <a class="btn btn--ghost" href="assets/resume/umer-shoaib-resume.pdf" download id="resume-btn">
+            <svg width="18" height="18" aria-hidden="true"><use href="#i-download"/></svg>
+            Download Resume
+          </a>
+        </div>
+        <p class="resume-note" id="resume-note" role="status" hidden>
+          The resume PDF hasn't been added yet. Place it at <code>assets/resume/umer-shoaib-resume.pdf</code>.
+        </p>
+
+        <ul class="hero__tech reveal" style="--d:380ms" aria-label="Core technologies">
+          <li>HTML5</li><li>CSS3</li><li>WordPress</li><li>PHP</li><li>Laravel</li><li>Agentic AI</li>
+        </ul>
+      </div>
+
+      <div class="hero__visual reveal reveal--scale" style="--d:200ms">
+        <div class="portrait">
+          <div class="portrait__ring" aria-hidden="true"></div>
+          <figure class="portrait__frame" id="portrait">
+            <img
+              src="assets/images/umer.jpg"
+              alt="Portrait of Umer Shoaib in a suit and tie"
+              width="480" height="600"
+              fetchpriority="high"
+              decoding="async">
+            <div class="portrait__placeholder" aria-hidden="true">
+              <span>US</span>
+              <small>Add your photo at<br><code>assets/images/umer.jpg</code></small>
+            </div>
+          </figure>
+
+          <div class="chip chip--a" aria-hidden="true"><svg width="16" height="16"><use href="#i-code"/></svg> Frontend</div>
+          <div class="chip chip--b" aria-hidden="true"><svg width="16" height="16"><use href="#i-blocks"/></svg> WordPress</div>
+          <div class="chip chip--c" aria-hidden="true"><svg width="16" height="16"><use href="#i-server"/></svg> PHP &amp; Laravel</div>
+        </div>
+      </div>
+    </div>
+
+    <a class="scroll-cue" href="#about" aria-label="Scroll to About section"><span></span></a>
+  </section>
+
+  <!-- ============ STATS STRIP ============ -->
+  <section class="strip" aria-label="Portfolio at a glance">
+    <div class="container strip__inner">
+      <div class="strip__item reveal"><strong>11</strong><span>Projects in this portfolio</span></div>
+      <div class="strip__item reveal" style="--d:80ms"><strong>3</strong><span>Stacks: Frontend, WordPress, PHP</span></div>
+      <div class="strip__item reveal" style="--d:160ms"><strong>320px+</strong><span>Mobile-first, responsive layouts</span></div>
+      <div class="strip__item reveal" style="--d:240ms"><strong class="grad">AI</strong><span>Agentic AI — currently learning</span></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow"><span class="mono">01</span> About</p>
+        <h2 id="about-title" class="section__title">A learner who <em>builds</em> things that work.</h2>
+      </header>
+
+      <div class="bento">
+        <article class="card card--intro reveal" data-spotlight>
+          <p class="lead">
+            I am a passionate Web Development learner with practical experience building and customizing responsive websites.
+          </p>
+          <p>
+            I enjoy exploring new technologies, solving problems, and continuously improving my development skills. My primary interests include frontend development, WordPress development, PHP, Laravel, and emerging AI technologies.
+          </p>
+          <ul class="facts">
+            <li><svg width="18" height="18" aria-hidden="true"><use href="#i-pin"/></svg> Old Town, Kharadar, Karachi</li>
+            <li><svg width="18" height="18" aria-hidden="true"><use href="#i-spark"/></svg> Learning at Saylani SMIT</li>
+          </ul>
+        </article>
+
+        <article class="card card--mini reveal" style="--d:80ms" data-spotlight>
+          <span class="card__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-layout"/></svg></span>
+          <h3>Responsive UI</h3>
+          <p>Clean, mobile-friendly layouts with HTML5, CSS3, Sass and Bootstrap 5.</p>
+        </article>
+
+        <article class="card card--mini reveal" style="--d:140ms" data-spotlight>
+          <span class="card__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-blocks"/></svg></span>
+          <h3>WordPress</h3>
+          <p>Theme customization, Elementor page building and admin panel customization.</p>
+        </article>
+
+        <article class="card card--mini reveal" style="--d:200ms" data-spotlight>
+          <span class="card__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-server"/></svg></span>
+          <h3>PHP &amp; Laravel</h3>
+          <p>Core PHP and MySQL, plus Laravel projects with CRUD, authentication and AJAX.</p>
+        </article>
+
+        <article class="card card--mini card--accent reveal" style="--d:260ms" data-spotlight>
+          <span class="card__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-spark"/></svg></span>
+          <h3>Agentic AI</h3>
+          <p>Currently exploring AI agent workflows, prompt engineering and automation.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section--alt" id="skills" aria-labelledby="skills-title">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow"><span class="mono">02</span> Technical Skills</p>
+        <h2 id="skills-title" class="section__title">Tools I work with, <em>by category.</em></h2>
+        <p class="section__sub">No made-up percentages — just an honest map of what I use and what I'm learning.</p>
+      </header>
+
+      <div class="skills">
+        <article class="skill-card skill-card--lg reveal" data-spotlight>
+          <header>
+            <span class="card__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-code"/></svg></span>
+            <div><h3>Frontend</h3><p>Interfaces that adapt to every screen</p></div>
+          </header>
+          <ul class="tags">
+            <li>HTML5</li><li>CSS3</li><li>Sass / SCSS</li><li>Bootstrap 5</li><li>Responsive Web Design</li><li>Media Queries</li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal" style="--d:80ms" data-spotlight>
+          <header>
+            <span class="card__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-server"/></svg></span>
+            <div><h3>Backend</h3><p>Server-side logic &amp; data</p></div>
+          </header>
+          <ul class="tags">
+            <li>Core PHP</li><li>MySQL</li><li>Laravel</li><li>CRUD Operations</li><li>Authentication</li><li>AJAX</li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal" style="--d:140ms" data-spotlight>
+          <header>
+            <span class="card__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-wrench"/></svg></span>
+            <div><h3>CMS &amp; Tools</h3><p>Building and customizing sites</p></div>
+          </header>
+          <ul class="tags">
+            <li>WordPress</li><li>Elementor</li><li>Theme Customization</li><li>Admin Panel Customization</li><li>Photoshop</li><li>VS Code</li>
+          </ul>
+        </article>
+
+        <article class="skill-card skill-card--learning skill-card--wide reveal" style="--d:200ms" data-spotlight>
+          <header>
+            <span class="card__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-spark"/></svg></span>
+            <div><h3>Currently Learning</h3><p>Platform: <strong>Saylani SMIT</strong></p></div>
+            <span class="badge">In progress</span>
+          </header>
+          <ul class="tags">
+            <li>Agentic AI</li><li>AI Agent Workflows</li><li>Prompt Engineering</li><li>Workflow Automation</li><li>Tool Integrations</li><li>API Integrations</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects" aria-labelledby="projects-title">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow"><span class="mono">03</span> Featured Projects</p>
+        <h2 id="projects-title" class="section__title">Eleven builds, <em>one growing craft.</em></h2>
+        <p class="section__sub">From WordPress sites to Laravel apps. Filter by stack to explore.</p>
+      </header>
+
+      <div class="filters reveal" role="group" aria-label="Filter projects by category">
+        <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All Projects</button>
+        <button type="button" class="filter" data-filter="wordpress" aria-pressed="false">WordPress</button>
+        <button type="button" class="filter" data-filter="frontend" aria-pressed="false">Frontend</button>
+        <button type="button" class="filter" data-filter="php" aria-pressed="false">PHP</button>
+        <button type="button" class="filter" data-filter="laravel" aria-pressed="false">Laravel</button>
+        <span class="filters__count" id="filter-count" role="status" aria-live="polite">Showing 11 projects</span>
+      </div>
+
+      <!--
+        To add real links to a project, put this inside its .project__body (after the tags):
+        <div class="project__links">
+          <a class="btn btn--sm btn--primary" href="LIVE_URL" target="_blank" rel="noopener">Live Demo</a>
+          <a class="btn btn--sm btn--ghost" href="GITHUB_URL" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        Only add the buttons that have a real URL.
+      -->
+      <ul class="projects" id="project-grid">
+
+        <li class="project" data-category="wordpress">
+          <article class="project__card" data-spotlight>
+            <div class="thumb" style="--h:215" aria-hidden="true">
+              <div class="thumb__bar"><i></i><i></i><i></i><span>codesmashers</span></div>
+              <div class="thumb__body thumb--hero"><span class="t-title"></span><span class="t-line"></span><span class="t-line short"></span><span class="t-btn"></span><div class="t-row"><i></i><i></i><i></i></div></div>
+              <span class="thumb__num">01</span>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">WordPress</p>
+              <h3>Codesmashers</h3>
+              <p>A professional WordPress website built for a tech community platform.</p>
+              <ul class="tags tags--sm"><li>WordPress</li><li>Responsive</li></ul>
+            </div>
+          </article>
+        </li>
+
+        <li class="project" data-category="wordpress">
+          <article class="project__card" data-spotlight>
+            <div class="thumb" style="--h:175" aria-hidden="true">
+              <div class="thumb__bar"><i></i><i></i><i></i><span>traveller</span></div>
+              <div class="thumb__body thumb--split"><div class="t-img"></div><div class="t-col"><span class="t-title"></span><span class="t-line"></span><span class="t-line short"></span><span class="t-btn"></span></div></div>
+              <span class="thumb__num">02</span>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">WordPress</p>
+              <h3>Traveller</h3>
+              <p>A travel-focused WordPress website with destination listings and booking UI.</p>
+              <ul class="tags tags--sm"><li>WordPress</li><li>Travel</li></ul>
+            </div>
+          </article>
+        </li>
+
+        <li class="project" data-category="wordpress">
+          <article class="project__card" data-spotlight>
+            <div class="thumb" style="--h:255" aria-hidden="true">
+              <div class="thumb__bar"><i></i><i></i><i></i><span>modern-website</span></div>
+              <div class="thumb__body thumb--hero"><span class="t-title"></span><span class="t-line"></span><span class="t-line short"></span><span class="t-btn"></span><div class="t-row"><i></i><i></i><i></i></div></div>
+              <span class="thumb__num">03</span>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">WordPress</p>
+              <h3>Modern Website</h3>
+              <p>A modern business website crafted with WordPress and the Elementor page builder.</p>
+              <ul class="tags tags--sm"><li>WordPress</li><li>Elementor</li></ul>
+            </div>
+          </article>
+        </li>
+
+        <li class="project" data-category="frontend">
+          <article class="project__card" data-spotlight>
+            <div class="thumb" style="--h:25" aria-hidden="true">
+              <div class="thumb__bar"><i></i><i></i><i></i><span>american-food</span></div>
+              <div class="thumb__body thumb--grid"><div class="t-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+              <span class="thumb__num">04</span>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">Frontend</p>
+              <h3>American Food Website</h3>
+              <p>A food-themed frontend website built with HTML, Sass and Bootstrap.</p>
+              <ul class="tags tags--sm"><li>HTML</li><li>Sass</li><li>Bootstrap</li></ul>
+            </div>
+          </article>
+        </li>
+
+        <li class="project" data-category="frontend">
+          <article class="project__card" data-spotlight>
+            <div class="thumb" style="--h:150" aria-hidden="true">
+              <div class="thumb__bar"><i></i><i></i><i></i><span>veterinary</span></div>
+              <div class="thumb__body thumb--split"><div class="t-img"></div><div class="t-col"><span class="t-title"></span><span class="t-line"></span><span class="t-line short"></span><span class="t-btn"></span></div></div>
+              <span class="thumb__num">05</span>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">Frontend</p>
+              <h3>Veterinary Website</h3>
+              <p>A clean, responsive website for a veterinary clinic built with Bootstrap.</p>
+              <ul class="tags tags--sm"><li>Bootstrap 5</li><li>Responsive</li></ul>
+            </div>
+          </article>
+        </li>
+
+        <li class="project" data-category="frontend">
+          <article class="project__card" data-spotlight>
+            <div class="thumb" style="--h:275" aria-hidden="true">
+              <div class="thumb__bar"><i></i><i></i><i></i><span>patrix</span></div>
+              <div class="thumb__body thumb--grid"><div class="t-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+              <span class="thumb__num">06</span>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">Frontend</p>
+              <h3>Patrix</h3>
+              <p>A responsive Bootstrap website with clear sections and reusable components.</p>
+              <ul class="tags tags--sm"><li>Bootstrap 5</li><li>Responsive</li></ul>
+            </div>
+          </article>
+        </li>
+
+        <li class="project" data-category="frontend">
+          <article class="project__card" data-spotlight>
+            <div class="thumb" style="--h:12" aria-hidden="true">
+              <div class="thumb__bar"><i></i><i></i><i></i><span>resto</span></div>
+              <div class="thumb__body thumb--grid"><div class="t-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+              <span class="thumb__num">07</span>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">Frontend</p>
+              <h3>Resto</h3>
+              <p>A restaurant website built with Bootstrap and a responsive, modern layout.</p>
+              <ul class="tags tags--sm"><li>Bootstrap 5</li><li>Responsive</li></ul>
+            </div>
+          </article>
+        </li>
+
+        <li class="project" data-category="frontend">
+          <article class="project__card" data-spotlight>
+            <div class="thumb" style="--h:195" aria-hidden="true">
+              <div class="thumb__bar"><i></i><i></i><i></i><span>personal-portfolio</span></div>
+              <div class="thumb__body thumb--folio"><div class="t-avatar"></div><span class="t-title"></span><span class="t-line"></span><div class="t-row"><i></i><i></i><i></i></div></div>
+              <span class="thumb__num">08</span>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">Frontend</p>
+              <h3>Personal Portfolio</h3>
+              <p>A personal portfolio website built with HTML5, CSS3 and media queries.</p>
+              <ul class="tags tags--sm"><li>HTML5</li><li>CSS3</li><li>Media Queries</li></ul>
+            </div>
+          </article>
+        </li>
+
+        <li class="project" data-category="laravel">
+          <article class="project__card" data-spotlight>
+            <div class="thumb" style="--h:5" aria-hidden="true">
+              <div class="thumb__bar"><i></i><i></i><i></i><span>my-books</span></div>
+              <div class="thumb__body thumb--auth"><div class="t-card"><span class="t-title"></span><span class="t-input"></span><span class="t-input"></span><span class="t-btn"></span></div></div>
+              <span class="thumb__num">09</span>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">Laravel</p>
+              <h3>My-Books</h3>
+              <p>A book management app built with Laravel, featuring CRUD and AJAX authentication.</p>
+              <ul class="tags tags--sm"><li>Laravel</li><li>CRUD</li><li>AJAX</li><li>Authentication</li></ul>
+            </div>
+          </article>
+        </li>
+
+        <li class="project" data-category="php">
+          <article class="project__card" data-spotlight>
+            <div class="thumb" style="--h:225" aria-hidden="true">
+              <div class="thumb__bar"><i></i><i></i><i></i><span>sms / mysms</span></div>
+              <div class="thumb__body thumb--dash"><div class="t-side"><i></i><i></i><i></i></div><div class="t-main"><span></span><span></span><span></span><span></span></div></div>
+              <span class="thumb__num">10</span>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">PHP</p>
+              <h3>SMS / MYSMS</h3>
+              <p>A Core PHP project with server-side logic and MySQL-backed data handling.</p>
+              <ul class="tags tags--sm"><li>Core PHP</li><li>MySQL</li></ul>
+            </div>
+          </article>
+        </li>
+
+        <li class="project" data-category="php">
+          <article class="project__card" data-spotlight>
+            <div class="thumb" style="--h:165" aria-hidden="true">
+              <div class="thumb__bar"><i></i><i></i><i></i><span>contactplus</span></div>
+              <div class="thumb__body thumb--dash"><div class="t-side"><i></i><i></i><i></i></div><div class="t-main"><span></span><span></span><span></span><span></span></div></div>
+              <span class="thumb__num">11</span>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">PHP</p>
+              <h3>Contactplus</h3>
+              <p>A Core PHP project for managing contact records with database-driven features.</p>
+              <ul class="tags tags--sm"><li>Core PHP</li><li>MySQL</li></ul>
+            </div>
+          </article>
+        </li>
+      </ul>
+
+      <p class="projects__note reveal">Demo and source links are shown only when real URLs exist — they will appear here as projects go live.</p>
+    </div>
+  </section>
+
+  <!-- ============ LEARNING ============ -->
+  <section class="section section--alt learning" id="learning" aria-labelledby="learning-title">
+    <div class="container learning__inner">
+      <div class="learning__copy">
+        <p class="eyebrow reveal"><span class="mono">04</span> Currently Learning</p>
+        <h2 id="learning-title" class="section__title reveal" style="--d:60ms">Exploring the Future of <em>Intelligent Automation.</em></h2>
+        <p class="section__sub reveal" style="--d:120ms">
+          I am expanding my development knowledge by exploring Agentic AI, intelligent workflows, prompt engineering, and integrations that connect AI systems with real-world tools.
+        </p>
+
+        <ul class="learn-list">
+          <li class="reveal" style="--d:160ms"><span class="mono">01</span> Agentic AI</li>
+          <li class="reveal" style="--d:200ms"><span class="mono">02</span> Prompt Engineering</li>
+          <li class="reveal" style="--d:240ms"><span class="mono">03</span> AI Agent Workflows</li>
+          <li class="reveal" style="--d:280ms"><span class="mono">04</span> Workflow Automation</li>
+          <li class="reveal" style="--d:320ms"><span class="mono">05</span> API &amp; Tool Integrations</li>
+        </ul>
+
+        <p class="platform reveal" style="--d:360ms">
+          <svg width="18" height="18" aria-hidden="true"><use href="#i-spark"/></svg>
+          Learning platform: <strong>Saylani SMIT</strong>
+        </p>
+      </div>
+
+      <figure class="flow reveal reveal--scale" style="--d:160ms">
+        <div class="flow__head"><span class="mono">agent-workflow.concept</span><span class="badge">Learning</span></div>
+        <ol class="flow__steps">
+          <li class="flow__node"><span class="mono">01</span><strong>Prompt</strong><small>A clear goal and context</small></li>
+          <li class="flow__node flow__node--core"><span class="mono">02</span><strong>AI Agent</strong><small>Plans and decides next steps</small></li>
+          <li class="flow__node"><span class="mono">03</span><strong>Tools &amp; APIs</strong><small>Connects to real-world services</small></li>
+          <li class="flow__node"><span class="mono">04</span><strong>Result</strong><small>Automated, useful outcome</small></li>
+        </ol>
+        <figcaption>How I currently picture an agent workflow while studying — a learning model, not a production system.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ JOURNEY ============ -->
+  <section class="section" id="journey" aria-labelledby="journey-title">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow"><span class="mono">05</span> My Development Journey</p>
+        <h2 id="journey-title" class="section__title">One step at a time, <em>always forward.</em></h2>
+        <p class="section__sub">An honest sequence of how I've grown as a developer.</p>
+      </header>
+
+      <ol class="timeline" id="timeline">
+        <li class="tl-item reveal"><span class="tl-dot" aria-hidden="true"><b>01</b></span><div class="tl-card"><h3>HTML &amp; CSS fundamentals</h3><p>Started with the building blocks of the web — structure and styling.</p></div></li>
+        <li class="tl-item reveal"><span class="tl-dot" aria-hidden="true"><b>02</b></span><div class="tl-card"><h3>Building responsive websites</h3><p>Made layouts that adapt gracefully across mobile, tablet and desktop.</p></div></li>
+        <li class="tl-item reveal"><span class="tl-dot" aria-hidden="true"><b>03</b></span><div class="tl-card"><h3>Exploring Bootstrap &amp; Sass</h3><p>Worked with component-based UI and CSS preprocessing for scalable styles.</p></div></li>
+        <li class="tl-item reveal"><span class="tl-dot" aria-hidden="true"><b>04</b></span><div class="tl-card"><h3>Developing WordPress websites</h3><p>Built and customized WordPress sites using themes and page builders.</p></div></li>
+        <li class="tl-item reveal"><span class="tl-dot" aria-hidden="true"><b>05</b></span><div class="tl-card"><h3>Learning PHP &amp; MySQL</h3><p>Moved into server-side development with Core PHP and relational databases.</p></div></li>
+        <li class="tl-item reveal"><span class="tl-dot" aria-hidden="true"><b>06</b></span><div class="tl-card"><h3>Laravel &amp; CRUD applications</h3><p>Explored the Laravel framework with CRUD operations and authentication.</p></div></li>
+        <li class="tl-item tl-item--now reveal"><span class="tl-dot" aria-hidden="true"><b>07</b></span><div class="tl-card"><span class="badge">Now</span><h3>Expanding into Agentic AI</h3><p>Exploring AI agents, prompt engineering and workflow automation.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--alt contact" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow"><span class="mono">06</span> Contact</p>
+        <h2 id="contact-title" class="section__title">Let's build <em>something good.</em></h2>
+        <p class="section__sub">Have a project or an opportunity in mind? Send a message — I'd love to hear about it.</p>
+      </header>
+
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <ul class="info-list">
+            <li class="info" data-spotlight>
+              <span class="card__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-mail"/></svg></span>
+              <div><small>Email</small><a href="mailto:umerawan.tech@gmail.com">umerawan.tech@gmail.com</a></div>
+              <button type="button" class="copy" data-copy="umerawan.tech@gmail.com" aria-label="Copy email address"><svg width="18" height="18" aria-hidden="true"><use href="#i-copy"/></svg></button>
+            </li>
+            <li class="info" data-spotlight>
+              <span class="card__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <div><small>Phone</small><a href="tel:+923352703740">03352703740</a></div>
+              <button type="button" class="copy" data-copy="03352703740" aria-label="Copy phone number"><svg width="18" height="18" aria-hidden="true"><use href="#i-copy"/></svg></button>
+            </li>
+            <li class="info" data-spotlight>
+              <span class="card__icon"><svg width="22" height="22" aria-hidden="true"><use href="#i-pin"/></svg></span>
+              <div><small>Location</small><span>Karachi, Pakistan</span></div>
+            </li>
+          </ul>
+          <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        </div>
+
+        <!--
+          Form delivery:
+          - Default: opens the visitor's email app with the message pre-filled (mailto).
+          - To send directly from the site, add a form endpoint (e.g. Formspree):
+            <form ... data-endpoint="https://formspree.io/f/YOUR_ID">
+        -->
+        <form class="form reveal" id="contact-form" novalidate data-email="umerawan.tech@gmail.com" style="--d:100ms">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name" aria-describedby="name-error">
+            <p class="field__error" id="name-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" aria-describedby="email-error">
+            <p class="field__error" id="email-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" required placeholder="What's this about?" aria-describedby="subject-error">
+            <p class="field__error" id="subject-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or idea…" aria-describedby="message-error"></textarea>
+            <p class="field__error" id="message-error" role="alert"></p>
+          </div>
+
+          <button class="btn btn--primary btn--block" type="submit" id="form-submit">
+            <span class="btn__label">Send Message</span>
+            <span class="btn__spinner" aria-hidden="true"></span>
+            <svg class="btn__icon" width="18" height="18" aria-hidden="true"><use href="#i-send"/></svg>
+          </button>
+          <p class="form__status" id="form-status" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#home" class="brand" aria-label="Umer Shoaib — back to top">
+        <span class="brand__mark" aria-hidden="true">US</span>
+        <span class="brand__name">Umer Shoaib</span>
+      </a>
+      <p>Web Developer &amp; WordPress Developer — building responsive, modern websites.</p>
+    </div>
+
+    <nav class="footer__nav" aria-label="Footer">
+      <h2>Navigate</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__contact">
+      <h2>Get in touch</h2>
+      <ul>
+        <li><a href="mailto:umerawan.tech@gmail.com">umerawan.tech@gmail.com</a></li>
+        <li><a href="tel:+923352703740">03352703740</a></li>
+        <li>Karachi, Pakistan</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bar">
+    <p>© <span id="year">2026</span> Umer Shoaib. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="to-top" type="button" id="to-top" aria-label="Back to top" hidden>
+  <svg width="20" height="20" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+</button>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
